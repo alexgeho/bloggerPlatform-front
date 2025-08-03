@@ -5,7 +5,7 @@ function App() {
     return (
         <div className="app">
             <header className="header">
-                <h1>Blogger</h1>
+                <h1>Blogger Platform</h1>
                 <button className="signin">Sign In</button>
             </header>
             <div className="main-layout">
@@ -18,13 +18,16 @@ function App() {
                     </ul>
                 </aside>
                 <main className="content">
-                    <h2>Latest Posts</h2>
-                    <ul>
-                        <li>Post #1</li>
-                        <li>Post #2</li>
-                        <li>Post #3</li>
-                    </ul>
+                    <h2>Top Posts</h2>
+                    <div className="post-grid">
+                        <div className="post-card">Post #1</div>
+                        <div className="post-card">Post #2</div>
+                        <div className="post-card">Post #3</div>
+                        <div className="post-card">Post #4</div>
+                        <div className="post-card">Post #5</div>
+                    </div>
                 </main>
+
             </div>
         </div>
     );
