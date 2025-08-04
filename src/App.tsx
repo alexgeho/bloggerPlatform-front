@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage";
+import EmailConfirmed from "./pages/EmailConfirmed";
 
 function App() {
     const navigate = useNavigate();
@@ -41,6 +42,7 @@ function App() {
                     }
                 />
                 <Route path="/register" element={<RegisterPage />} />
+                <Route path="/email-confirmed" element={<EmailConfirmed />} />
             </Routes>
         </div>
     );
