@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const isProduction = process.env.NODE_ENV === 'production'
-
-export default defineConfig({
+// Просто жёстко указываем base только для build
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: isProduction ? '/bloggerPlatform-front/' : '/',
-})
+  base: command === 'build' ? '/bloggerPlatform-front/' : '/', // 💡 Vite сам передаст command
+}))
