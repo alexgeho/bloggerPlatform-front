@@ -14,7 +14,7 @@ export function RegistrationForm() {
         try {
             // Отправляем данные на бэкенд
             const response
-                = await fetch("http://localhost:5003/auth/registration", {
+                = await fetch("https://blogger-platform-pi.vercel.app/auth/registration", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -23,17 +23,17 @@ export function RegistrationForm() {
             });
 
             if (response.ok) {
-                setMessage("Регистрация успешна");
+                setMessage("Successful registration");
                 setLogin("");
                 setEmail("");
                 setPassword("");
             } else {
                 const errorData = await response.json();
-                setMessage(errorData.message || "Ошибка при регистрации");
+                setMessage(errorData.message || "Registration Error");
             }
         } catch (error) {
-            console.error("Ошибка:", error);
-            setMessage("Сервер недоступен");
+            console.error("Error:", error);
+            setMessage("Server is unavailable");
         }
     };
 
