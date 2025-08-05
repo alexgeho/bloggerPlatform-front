@@ -1,11 +1,10 @@
 import "./App.css";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage";
 import EmailConfirmed from "./pages/EmailConfirmed";
 import {Layout} from "./components/Layout.tsx";
 
 function App() {
-    const navigate = useNavigate();
 
     return (
         <div className="app">
