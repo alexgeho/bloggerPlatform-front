@@ -1,22 +1,8 @@
 export default function Home() {
-
     return (
-        <div className="main-layout">
-
-            <main className="content">
-
-                <h2>Top Posts</h2>
-
-                <div className="post-grid">
-                    <div className="post-card">Post One</div>
-                    <div className="post-card">Post #2</div>
-                    <div className="post-card">Post #3</div>
-                    <div className="post-card">Post #4</div>
-                    <div className="post-card">Post #5</div>
-                </div>
-
-            </main>
+        <div>
+            <h2>Welcome to Blogger Platform</h2>
+            <p>Select a blog from the left to view posts.</p>
         </div>
-    )
-
+    );
 }

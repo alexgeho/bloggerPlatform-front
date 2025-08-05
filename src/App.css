@@ -47,9 +47,10 @@ body {
 .content {
   flex: 1;
   background: #d1d1d1;
-  padding: 1rem;
   border-radius: 6px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  min-height: 100vh; /* или хотя бы 400px */
 }
 
 .post-grid {
