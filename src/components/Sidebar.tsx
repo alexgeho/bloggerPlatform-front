@@ -1,12 +1,13 @@
-// export function Sidebar() {
-//     return (
-//         <aside className="w-1/4 p-4 border-r h-full">
-//             <h2 className="text-lg font-semibold mb-2">Blogs Bitau</h2>
-//             <ul>
-//                 <li>Frontend 1</li>
-//                 <li>Backend 2</li>
-//                 <li>AI 3</li>
-//             </ul>
-//         </aside>
-//     );
-// }
+
+export default function Sidebar() {
+    return (
+        <aside className="sidebar">
+            <h2>Blogs</h2>
+            <ul>
+                <li>Blog One</li>
+                <li>Blog Two</li>
+                <li>Blog Three</li>
+            </ul>
+        </aside>
+    );
+}

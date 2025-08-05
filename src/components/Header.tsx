@@ -1,12 +1,19 @@
-// export function Header() {
-//     return (
-//         <header className="w-[2000px] h-[500px] bg-blue-100 shadow-md flex justify-between items-center px-10">
-//             <h1 className="text-4xl font-bold">Bla Bla </h1>
-//             <nav>
-//                 <button className="px-6 py-3 bg-blue-600 text-white text-lg rounded">
-//                     Sign In
-//                 </button>
-//             </nav>
-//         </header>
-//     );
-// }
+import {useNavigate} from "react-router-dom";
+
+export default function Header() {
+
+    const navigate = useNavigate();
+
+    return (
+
+        <header className="header">
+            <h1>Blogger Platform</h1>
+            <button className="signin" onClick={() => navigate("/register")}>
+                Sign In
+            </button>
+        </header>
+
+    );
+
+}
+
