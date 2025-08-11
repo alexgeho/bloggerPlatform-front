@@ -6,6 +6,24 @@ body {
   color: #111;
 }
 
+/* Убираем черный бордер при фокусе на кнопках */
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.ant-btn:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ant-btn:focus-visible {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .app {
   display: flex;
   flex-direction: column;
